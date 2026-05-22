@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Age Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="
+        https://cdn.jsdelivr.net/npm/luxon@3.7.2/build/global/luxon.min.js
+        "></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    </head>
+    <body>
+        
+        <h2>Age Calculator</h2>
+        <form class="calculator">
+            <label for="birthdate">Enter your birthdate:</label>
+            <img src="assets/time-and-date.png" alt="Calendar Icon" class="calendar-icon">
+            <input type="text" id="birthdate" placeholder="Select your birthdate">
+            <button type="button" id="submit">Calculate Age</button>
+            <div id="result"></div>
+        </form>
+
+        <script src="script.js"></script>
+        <script>
+            flatpickr("#birthdate", {});
+
+            const submitButton = document.querySelector('#submit');
+            submitButton.addEventListener('click', calculateAge);
+        </script>
+    </body>
+</html>

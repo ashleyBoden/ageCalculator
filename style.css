@@ -1,0 +1,53 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.calculator label {
+    font-size: 1.5em;
+    color: #333;
+    text-align: left;
+    align-self: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calculator input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 75%;
+    text-align: left;
+}
+
+.calculator button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.calendar-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    right: 60px;
+    top: 42.5%;
+    transform: translateY(-50%);
+}
